@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Form
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="register">
+    <pre>
+      {{userData|json}}
+    </pre>
+    
+  <h4 class="ion-text-center">Register</h4>
+<form novalidate>
+  <ion-item line="none"> 
+    <ion-label position="floating">username</ion-label>
+    <ion-input [(ngModel)]="userData.username" name="username"></ion-input>
+  </ion-item>
+
+  <ion-item line="none"> 
+    <ion-label position="floating">email</ion-label>
+    <ion-input [(ngModel)]="userData.email" name="email" ></ion-input>
+  </ion-item>
+
+  <ion-item line="none"> 
+    <ion-label position="floating">password</ion-label>
+    <ion-input [(ngModel)]="userData.password" name="password" type="password"></ion-input>
+  </ion-item>
+
+ <ion-button (click)="submit()"expand="block">button</ion-button>
+</form>
+</div>  
+</ion-content>
+<h1>hello basheer
+  
+</h1>
